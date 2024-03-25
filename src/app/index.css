@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "MullerRegular";
+    src: local("MullerRegular"), url("../shared/assets/fonts/Muller/MullerRegular.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerMedium";
+    src: local("MullerMedium"), url("../shared/assets/fonts/Muller/MullerMedium.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerRegular";
+    src: local("MullerRegular"), url("../shared/assets/fonts/Muller/MullerRegular.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerMedium";
+    src: local("MullerMedium"), url("../shared/assets/fonts/Muller/MullerMedium.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerRegular";
+    src: local("MullerRegular"), url("../shared/assets/fonts/Muller/MullerRegular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerMedium";
+    src: local("MullerMedium"), url("../shared/assets/fonts/Muller/MullerMedium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerRegular";
+    src: local("MullerRegular"), url("../shared/assets/fonts/Muller/MullerRegular.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MullerMedium";
+    src: local("MullerMedium"), url("../shared/assets/fonts/Muller/MullerMedium.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}

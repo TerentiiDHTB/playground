@@ -1,0 +1,89 @@
+@use "sass:color";
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.75rem;
+
+  border: 1px solid #d3dbe3;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: 0.5s;
+
+  .formKitInputOuter {
+    display: none;
+  }
+
+  .uploadFileButton {
+    padding: 0.5vh;
+
+    background-color: #0057db;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    border-radius: 6px;
+    border: none;
+  }
+
+  &[aria-state="not_chosen"] {
+    background-color: #fff;
+    border: 1px solid #d3dbe3;
+  }
+
+  &[aria-state="loading"] {
+    color: white;
+    animation: loadingAnimation 5s linear infinite;
+
+    background-color: color.scale(#0057db, $lightness: 75%);
+    @keyframes loadingAnimation {
+      0% {
+        background-color: color.scale(#0057db, $lightness: 75%);
+      }
+
+      50% {
+        background-color: color.scale(#0057db, $lightness: 50%);
+      }
+
+      100% {
+        background-color: color.scale(#0057db, $lightness: 75%);
+      }
+    }
+
+    .uploadFileButton {
+      background-color: #0057db;
+    }
+
+
+  }
+
+  &[aria-state="loaded"] {
+    background-color: #ebfaf3;
+    color: #22aa6a;
+
+    opacity: 0.7;
+
+    .uploadFileButton {
+      background-color: #22aa6a;
+    }
+  }
+
+  &[aria-state="error"] {
+    background-color: #feeae7;
+    color: #f66e5e;
+
+    .uploadFileButton {
+      background-color: #f66e5e;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
